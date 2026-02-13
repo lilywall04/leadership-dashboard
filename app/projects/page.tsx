@@ -7,9 +7,14 @@ const projects = [
     stack: ["React", "TypeScript", "Tailwind"],
   },
   {
-    slug: "raspberry-pi-ai-pet",
-    title: "Raspberry Pi AI Pet",
-    stack: ["Python", "Raspberry Pi", "Sensors"],
+    slug: "Padre-Ginos",
+    title: "Padre Gino's Pizza",
+    stack: ["React", "Vite", "Tailwind"],
+  },
+    {
+    slug: "Lilys-Game",
+    title: "2D Game",
+    stack: ["Java", "JavaFX", "JFrame"],
   },
 ];
 

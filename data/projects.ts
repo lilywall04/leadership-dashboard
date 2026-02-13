@@ -14,10 +14,17 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Tailwind"],
   },
   {
-    slug: "raspberry-pi-ai-pet",
-    title: "Raspberry Pi AI Pet",
+    slug: "Padre-Ginos",
+    title: "Padre Gino's Pizza",
     description:
-      "An interactive AI pet powered by sensors and Python logic.",
-    stack: ["Python", "Raspberry Pi", "Hardware"],
+      "My first experience working with React, Vite, and Tailwind CSS.",
+    stack: ["React", "Vite", "Tailwind"],
+  },
+  {
+    slug: "Lilys-Game",
+    title: "2D Game of Lily and her friends",
+    description:
+      "Java project that utilizes JavaFX to create a 2D game featuring Lily and her friends.",
+    stack: ["Java", "JavaFX", "JFrame"],
   },
 ];

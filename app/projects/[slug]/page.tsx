@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import { projects } from "../../../data/projects";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function ProjectDetail({ params }: Props) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectDetail({ params }: Props) {
+  const { slug } = await params;
+
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
@@ -23,10 +25,7 @@ export default function ProjectDetail({ params }: Props) {
         <h2 className="text-lg font-semibold">Tech Stack</h2>
         <ul className="mt-2 flex flex-wrap gap-2">
           {project.stack.map((tech) => (
-            <li
-              key={tech}
-              className="rounded-full bg-slate-100 px-3 py-1 text-sm"
-            >
+            <li key={tech} className="rounded-full bg-slate-100 px-3 py-1 text-sm">
               {tech}
             </li>
           ))}
